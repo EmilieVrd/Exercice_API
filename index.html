@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Leaflet</title>
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<link href="assets/css/leaflet.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="assets/js/leaflet-src.js"></script>
+<script src="assets/js/TileLayer.Grayscale.js"></script>
+
+</head>
+
+<body>
+<!--MENU-->
+<div class="topnav" id="myTopnav">
+  <ul>
+    <a href="#">Au <br />
+    quotidien</a> 
+	  <a href="#">Démarches <br />
+    &amp; téléservices</a> 
+	  <a href="#">sorties <br />
+    &amp; découvertes</a> 
+	  <a href="#home"><img src="https://www.narbonne.fr/sites/all/themes/narbonne/images-source/logo.png" alt="logo" class="logo"/></a> <a href="#">la <br />
+    municipalité</a> 
+	  <a href="#">participation <br />
+    citoyenne</a> 
+	  <a href="#" class="allo">Allo <br />
+    narbonne</a> 
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
+  </ul>
+</div>
+<!--MAP-->
+<div id="map"></div>
+<section>
+	<div class="row">
+  <div class="column-left">	
+	  <article class="about">
+		  <div class="column-left">
+		  <p>J'ai choisi ces locations car elles représentent chacune un pôle différent: Santé, Culture, Sport, Alimentation et Tourisme. Ce sont des points importants à connaître en tant que citoyen établi, nouvel arrivant ou simple touriste.</p>
+		  </div> 
+		  <div class="column-right">
+			  <img src="assets/images/IMG-20201219-WA0000.jpg" class="photo" alt="photo auteur" width="200"/>
+		  </div>
+	  </article>
+	  <ul>
+		  <li><img src="assets/images/town-hall.png" width="100"/><p>Principale place du quartier de Cité, elle accueillait jusqu'à la Révolution, le marché neuf. Rénovée et rendue à la circulation piétonnière en 1997, elle présente en son centre un vestige de l'antique Voie Domitienne et demeure aujourd'hui le véritable coeur de Narbonne.</p></li>
+		  <li><img src="assets/images/museum.png" width="100"/><p>L’établissement public de coopération culturelle Narbo Via rassemble trois lieux, trois temporalités, trois histoires : le musée Narbo Via, les galeries souterraines de l’Horreum et le site-musée archéologique d’Amphoralis</p></li>
+		  <li><img src="assets/images/stadium.png" width="100"/>Il constitue depuis son ouverture en 1976 et sa réhabilitation en 1992, un des équipements incontournables de Narbonne Fréquenté annuellement par des milliers de narbonnaises et de narbonnais, il est avant tout un grand espace vert public.</li>
+		  <li><img src="assets/images/market.png" width="100"/>A visiter pour savourer le plaisir des yeux et le plaisir du palais, avec près de 70 commerces des meilleurs produits frais, des fruits aux légumes aux poissons, en passant par les fromages et les vins fins de la région.Le marché de Narbonne est gastronomiquement reconnu dans tout le Languedoc pour sa qualité, son choix et son ambiance….</li>
+		  <li><img src="assets/images/hospital.png" width="100"/>Premier établissement public de santé de l’est-audois, situé au deuxième rang régional par son volume d’activité, le Centre Hospitalier de Narbonne dispose de 500 lits et a pour mission d’offrir des services diagnostiques et d’assurer toute la gamme des soins aigus en médecine, chirurgie et obstétrique, des soins de suite et de longue durée ainsi que des soins en psychiatrie.</li>
+
+	  </ul>
+		 </div>
+			<!--WEATHER BLOCK-->
+		<div class="column-right" id="weather-block">
+    <div class="container" >
+        <div class="app-title">
+            <p>Météo en ce moment</p>
+        </div>
+        <div class="notification"> </div>
+        <div class="weather-container">
+            <div class="weather-icon">
+                <img src="assets/images/icons/unknown.png" alt="">
+            </div>
+            <div class="temperature-value">
+                <p>- °<span>C</span></p>
+            </div>
+            <div class="temperature-description">
+                <p> - </p>
+            </div>
+            <div class="location">
+                <p>-</p>
+            </div>
+        </div>
+    </div>
+</div>
+	</div>
+</section>
+	<footer>SIMPLON DWWM 2020-2021 -- Exercice intégration API -- Openweathermap &amp; Leaflet</footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+@charset "utf-8";
+/* Polices */
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0; 
+}
+
+/* ===================================================================
+ * >> INITIALISATION CHARTE GRAPHIQUE GENERALE DU PROJET --site narbonne
+ * =================================================================*/
+img { max-width: 100%; height: auto; }
+
+a { text-decoration: none; color: #131313; }
+a:hover { text-decoration: underline; }
+
+
+/* ===================================================================
+ * > STYLES GENERIQUES --site narbonne
+ * =================================================================*/
+body {
+    background: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.125em; /* 18px */
+    line-height: 1.667em; /* 30px */
+    color: #131313;
+}
+/* ===================================================================
+ * > MENU
+ * =================================================================*/
+.topnav {
+  background-color: #fff;
+  overflow: hidden;
+	margin: 0 auto;
+	 text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 0.778em; /* 14px */
+    line-height: 1.429em; /* 20px */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: inline-flex;
+	align-items: center;
+}
+
+/* Change the color of links on hover */
+.topnav a:not(:nth-child(4)):hover {
+	border-bottom: 5px solid #0077BE;
+}
+.allo {
+	    font-family: 'Ubuntu', sans-serif;
+    background: #339966;
+    color: #fff;
+    font-size: 0.889em;
+    line-height: 1.125em;
+    text-align: center;
+    padding: 7px 16px;
+    border-radius: 18px;
+    display: block;
+    width: auto;
+	height: 30px;
+    right: 200px;
+	top: 90px;
+}
+
+@media screen and (max-width: 700px) {
+  .topnav a:not(:nth-child(4)) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }  
+	.topnav.responsive a:nth-child(4) {
+		display: none;
+  }
+}
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+/* ===================================================================
+ * > MAP
+ * =================================================================*/
+#map { 
+	height: 480px;
+	width: 100%;
+}
+.leaflet-popup-content {
+	width: 300px;
+}
+
+/* ===================================================================
+ * > sECTION 
+ * =================================================================*/
+section {
+	border: 5px solid #0077BE;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* ===================================================================
+ * > sECTION > left
+ * =================================================================*/
+.column-left {
+	float: left;
+	width: 75%;
+}
+.column-left ul {
+	list-style-type: none;
+}
+.about {
+	width: auto;
+	height: 200px;
+	padding: 20px;
+	background-color: lightblue;
+	text-align: center;
+	align-items: center;
+	border: 1px solid #0077BE;
+}
+.about p {
+	display: block;
+}
+.photo {
+	margin: 0 auto;
+	border: 1px solid #0077BE;
+
+}
+/* ===================================================================
+ * > SECTION > weather
+ * =================================================================*/
+#weather-block {
+	margin: 0 auto;
+}
+.column-right {
+	float: left;
+	width: 25%;
+}
+.container{
+    width: 300px;    
+    background-color: #0077BE;
+    
+    display: block;
+    margin: 0 auto;
+    
+    border-radius: 10px;
+    padding-bottom : 50px;
+}
+
+.app-title{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.app-title p{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.weather-container{
+    width: 300px;
+    height: 260px;
+    background-color: #0077BE;
+	background-image: url(https://www.audetourisme.com/uploads/2019/06/narbonne-2019-05-canal-robine-pont-cathedrale-cr-c-deschamps-adt-aude.jpg);
+	background-size: cover;
+}
+
+.weather-icon{
+    width: 300px;
+    height: 128px;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value{
+    width: 300px;
+    height:60px;
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.temperature-value span{
+    color: #fff;
+    font-size: 0.5em;
+}
+
+.temperature-description p{
+    padding: 8px;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+}
+.location p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+}
+@media screen and (max-width: 900px) {
+	.column-left, .column-right {
+		width: 100%;
+	}
+		section {
+		padding: 10px;
+		margin: auto;
+	}
+}
+/* ===================================================================
+ * > FooTER
+ * =================================================================*/
+footer {
+	background-color: #5C5C5C;
+	height: auto;
+	text-align: center;
+	line-height: 50px;
+}
